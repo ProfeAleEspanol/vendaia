@@ -8,11 +8,10 @@ export function INEMACard({
   return (
     <section
       className={cn(
-        "rounded-inema border border-inema-border bg-inema-panel p-5 shadow-panel",
+        "rounded-inema border border-inema-border bg-inema-panel p-5 shadow-panel transition-colors",
         className,
       )}
       {...props}
     />
   );
 }
-

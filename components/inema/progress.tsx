@@ -19,10 +19,9 @@ export function INEMAProgress({
       aria-valuenow={safeValue}
     >
       <div
-        className="h-full rounded-full bg-inema-cyan transition-all"
+        className="h-full rounded-full bg-gradient-to-r from-inema-primary to-inema-amber transition-all"
         style={{ width: `${safeValue}%` }}
       />
     </div>
   );
 }
-

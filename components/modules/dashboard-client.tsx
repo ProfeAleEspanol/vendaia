@@ -115,7 +115,7 @@ export function DashboardClient() {
       <section>
         <div className="mb-4 flex items-center justify-between gap-4">
           <div>
-            <p className="text-sm font-extrabold uppercase text-inema-cyan">Módulos</p>
+            <p className="text-sm font-extrabold uppercase text-inema-primary">Módulos</p>
             <h2 className="mt-2 text-3xl font-black text-inema-text">Sistema guiado de construção</h2>
           </div>
         </div>
@@ -128,4 +128,3 @@ export function DashboardClient() {
     </div>
   );
 }
-

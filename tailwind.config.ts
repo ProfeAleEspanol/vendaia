@@ -11,28 +11,30 @@ const config: Config = {
     extend: {
       colors: {
         inema: {
-          bg: "#080d12",
-          surface: "#0d131b",
-          panel: "#111722",
-          panelHigh: "#151d2a",
-          border: "#263341",
-          line: "#1a2430",
-          text: "#f7f9fc",
-          soft: "#e8eef6",
-          muted: "#aab4c2",
-          dim: "#778395",
-          cyan: "#4bd6ff",
-          mint: "#5df2b6",
-          amber: "#ffb84d",
-          purple: "#9d7dff",
-          rose: "#ff5d7a",
+          bg: "#111111",
+          surface: "#1a1a1a",
+          panel: "#242424",
+          panelHigh: "#2b2b2b",
+          border: "#333333",
+          line: "#242424",
+          text: "#ffffff",
+          soft: "#dddddd",
+          muted: "#bbbbbb",
+          dim: "#888888",
+          primary: "#FACC15",
+          cyan: "#FACC15",
+          mint: "#34D399",
+          amber: "#FB923C",
+          purple: "#60A5FA",
+          sky: "#38BDF8",
+          rose: "#FB7185",
         },
       },
       boxShadow: {
-        panel: "0 24px 90px rgba(0, 0, 0, 0.28)",
+        panel: "0 18px 60px rgba(0, 0, 0, 0.34)",
       },
       borderRadius: {
-        inema: "10px",
+        inema: "8px",
       },
     },
   },
@@ -40,4 +42,3 @@ const config: Config = {
 };
 
 export default config;
-

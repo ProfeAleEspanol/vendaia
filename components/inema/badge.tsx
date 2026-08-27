@@ -9,7 +9,7 @@ export function INEMABadge({
   ...props
 }: React.HTMLAttributes<HTMLSpanElement> & { tone?: BadgeTone }) {
   const tones: Record<BadgeTone, string> = {
-    cyan: "border-inema-cyan/50 text-inema-cyan",
+    cyan: "border-inema-primary/50 text-inema-primary",
     mint: "border-inema-mint/50 text-inema-mint",
     amber: "border-inema-amber/50 text-inema-amber",
     purple: "border-inema-purple/50 text-inema-purple",
@@ -28,4 +28,3 @@ export function INEMABadge({
     />
   );
 }
-

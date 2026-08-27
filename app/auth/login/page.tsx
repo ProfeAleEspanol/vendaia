@@ -13,7 +13,7 @@ export default function LoginPage() {
   return (
     <main className="inema-grid grid min-h-screen place-items-center p-4">
       <INEMACard className="w-full max-w-md">
-        <p className="text-sm font-extrabold uppercase text-inema-cyan">{brand.productLine}</p>
+        <p className="text-sm font-extrabold uppercase text-inema-primary">{brand.productLine}</p>
         <h1 className="mt-2 text-3xl font-black text-inema-text">{brand.appName}</h1>
         <p className="mt-2 text-sm leading-6 text-inema-muted">
           Autenticação Supabase preparada. Enquanto as variáveis não estiverem configuradas, use o modo local pelo dashboard.
@@ -43,4 +43,3 @@ export default function LoginPage() {
     </main>
   );
 }
-

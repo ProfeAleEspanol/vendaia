@@ -15,7 +15,7 @@ export function INEMAStepper({
           className={cn(
             "rounded-lg border px-3 py-2 text-sm font-bold",
             index <= current
-              ? "border-inema-cyan text-inema-cyan"
+              ? "border-inema-primary text-inema-primary"
               : "border-inema-border text-inema-muted",
           )}
         >
@@ -26,4 +26,3 @@ export function INEMAStepper({
     </ol>
   );
 }
-

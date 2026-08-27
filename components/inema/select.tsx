@@ -9,11 +9,10 @@ export function INEMASelect({
     <select
       className={cn(
         "min-h-11 w-full rounded-lg border border-inema-border bg-inema-surface px-3 text-sm text-inema-text",
-        "focus:border-inema-cyan focus:outline-none focus:ring-2 focus:ring-inema-cyan/20",
+        "focus:border-inema-primary focus:outline-none focus:ring-2 focus:ring-inema-primary/20",
         className,
       )}
       {...props}
     />
   );
 }
-

@@ -9,10 +9,10 @@ export function ProgressCard({
   nextStep: string;
 }) {
   return (
-    <INEMACard className="border-inema-cyan/40">
+    <INEMACard className="border-inema-primary/40">
       <div className="flex items-center justify-between gap-4">
         <div>
-          <p className="text-sm font-bold uppercase text-inema-cyan">Progresso geral</p>
+          <p className="text-sm font-bold uppercase text-inema-primary">Progresso geral</p>
           <h2 className="mt-2 text-4xl font-black text-inema-text">{value}%</h2>
         </div>
         <span className="rounded-lg border border-inema-border bg-inema-surface px-3 py-2 text-xs font-bold text-inema-muted">
@@ -25,4 +25,3 @@ export function ProgressCard({
     </INEMACard>
   );
 }
-

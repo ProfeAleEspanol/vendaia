@@ -19,10 +19,9 @@ export function MetricCard({
           <p className="text-sm font-bold text-inema-muted">{label}</p>
           <p className="mt-4 text-3xl font-black text-inema-text">{value}</p>
         </div>
-        <Icon className="h-6 w-6 text-inema-cyan" />
+        <Icon className="h-6 w-6 text-inema-primary" />
       </div>
       <p className="mt-4 text-sm leading-6 text-inema-muted">{helper}</p>
     </INEMACard>
   );
 }
-

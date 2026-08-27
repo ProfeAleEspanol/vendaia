@@ -90,7 +90,7 @@ function ScoreInput({
     <label className="grid gap-2 text-xs font-bold uppercase text-inema-muted">
       <span className="flex justify-between">
         {label}
-        <strong className="text-inema-cyan">{value}</strong>
+        <strong className="text-inema-primary">{value}</strong>
       </span>
       <input
         type="range"
@@ -98,7 +98,7 @@ function ScoreInput({
         max={5}
         value={value}
         onChange={(event) => onChange(Number(event.target.value))}
-        className="accent-inema-cyan"
+        className="accent-inema-primary"
       />
     </label>
   );
@@ -198,8 +198,8 @@ export function ModuleClient({ slug }: { slug: string }) {
         }
       />
 
-      <INEMACard className="flex items-start gap-4 border-inema-cyan/40">
-        <Icon className="mt-1 h-6 w-6 shrink-0 text-inema-cyan" />
+      <INEMACard className="flex items-start gap-4 border-inema-primary/40">
+        <Icon className="mt-1 h-6 w-6 shrink-0 text-inema-primary" />
         <div>
           <INEMABadge tone="amber">Entrega do módulo</INEMABadge>
           <p className="mt-3 text-xl font-black text-inema-text">{module.outcome}</p>
@@ -263,7 +263,7 @@ export function ModuleClient({ slug }: { slug: string }) {
                   </div>
                   <div className="min-w-40">
                     <p className="text-sm font-bold text-inema-muted">Score</p>
-                    <p className="text-4xl font-black text-inema-cyan">{score}</p>
+                    <p className="text-4xl font-black text-inema-primary">{score}</p>
                   </div>
                 </div>
                 <div className="mt-5 grid gap-4 md:grid-cols-3">
@@ -347,7 +347,7 @@ export function ModuleClient({ slug }: { slug: string }) {
           <INEMACard className="h-fit border-inema-amber/40">
             <INEMABadge tone="amber">Oferta gerada</INEMABadge>
             <p className="mt-4 text-2xl font-black leading-tight text-inema-text">{generatedOffer}</p>
-            <p className="mt-5 text-sm font-extrabold uppercase text-inema-cyan">Pitch de 30 segundos</p>
+            <p className="mt-5 text-sm font-extrabold uppercase text-inema-primary">Pitch de 30 segundos</p>
             <p className="mt-2 text-sm leading-6 text-inema-muted">{pitch}</p>
           </INEMACard>
         </div>
@@ -444,7 +444,7 @@ export function ModuleClient({ slug }: { slug: string }) {
           <INEMACard>
             <div className="flex items-center justify-between gap-4">
               <div>
-                <p className="text-sm font-extrabold uppercase text-inema-cyan">Primeiros 20 clientes</p>
+                <p className="text-sm font-extrabold uppercase text-inema-primary">Primeiros 20 clientes</p>
                 <h2 className="mt-2 text-3xl font-black text-inema-text">{state.prospects.length} / 20</h2>
               </div>
               <INEMAProgress value={(state.prospects.length / 20) * 100} className="w-48" />
@@ -487,7 +487,7 @@ export function ModuleClient({ slug }: { slug: string }) {
                     ),
                   }))
                 }
-                className="h-5 w-5 accent-inema-cyan"
+                className="h-5 w-5 accent-inema-primary"
               />
               <span className={task.done ? "text-inema-muted line-through" : "font-bold text-inema-text"}>{task.label}</span>
             </label>
