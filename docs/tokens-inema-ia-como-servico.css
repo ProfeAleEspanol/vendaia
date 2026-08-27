@@ -1,0 +1,95 @@
+:root {
+  --inema-bg: #080d12;
+  --inema-bg-2: #0d131b;
+  --inema-panel: #111722;
+  --inema-panel-high: #151d2a;
+  --inema-border: #263341;
+  --inema-hairline: #1a2430;
+
+  --inema-text: #f7f9fc;
+  --inema-text-soft: #e8eef6;
+  --inema-muted: #aab4c2;
+  --inema-dim: #778395;
+
+  --inema-cyan: #4bd6ff;
+  --inema-mint: #5df2b6;
+  --inema-amber: #ffb84d;
+  --inema-purple: #9d7dff;
+  --inema-rose: #ff5d7a;
+
+  --inema-radius-sm: 8px;
+  --inema-radius-md: 10px;
+  --inema-radius-lg: 14px;
+
+  --inema-font: "Segoe UI", Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.inema-workshop-theme {
+  background: var(--inema-bg);
+  color: var(--inema-text);
+  font-family: var(--inema-font);
+}
+
+.inema-eyebrow {
+  color: var(--inema-cyan);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.inema-title {
+  color: var(--inema-text);
+  font-weight: 800;
+  letter-spacing: 0;
+  line-height: 0.95;
+}
+
+.inema-subtitle {
+  color: var(--inema-muted);
+  font-weight: 400;
+  line-height: 1.35;
+}
+
+.inema-panel {
+  background: var(--inema-panel);
+  border: 1px solid var(--inema-border);
+  border-radius: var(--inema-radius-md);
+}
+
+.inema-chip {
+  background: var(--inema-panel-high);
+  border: 1px solid var(--inema-border);
+  border-radius: var(--inema-radius-sm);
+  color: var(--inema-text-soft);
+  font-weight: 700;
+}
+
+.inema-button-primary {
+  background: var(--inema-cyan);
+  border: 1px solid var(--inema-cyan);
+  border-radius: var(--inema-radius-md);
+  color: #071018;
+  font-weight: 800;
+}
+
+.inema-accent-tech {
+  color: var(--inema-cyan);
+}
+
+.inema-accent-service {
+  color: var(--inema-mint);
+}
+
+.inema-accent-business {
+  color: var(--inema-amber);
+}
+
+.inema-accent-method {
+  color: var(--inema-purple);
+}
+
+.inema-accent-risk {
+  color: var(--inema-rose);
+}
+
