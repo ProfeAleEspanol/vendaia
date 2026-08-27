@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+  <title id="title">Mapa do workshop IA como Serviço</title>
+  <desc id="desc">Fluxo visual com a jornada do workshop: habilidade, problema, oferta, diagnóstico, proposta, preço, cliente e recorrência.</desc>
+  <rect width="1200" height="720" fill="#080d12"/>
+  <g opacity="0.16" stroke="#ffffff" stroke-width="1">
+    <path d="M0 90H1200M0 180H1200M0 270H1200M0 360H1200M0 450H1200M0 540H1200M0 630H1200"/>
+    <path d="M100 0V720M200 0V720M300 0V720M400 0V720M500 0V720M600 0V720M700 0V720M800 0V720M900 0V720M1000 0V720M1100 0V720"/>
+  </g>
+  <path d="M0 0H485L250 720H0Z" fill="#102c3a" opacity="0.8"/>
+  <path d="M1200 720H730L1200 338Z" fill="#5d3a0a" opacity="0.78"/>
+  <g transform="translate(600 112)" fill="none" stroke="#4bd6ff" stroke-width="3" opacity="0.45">
+    <ellipse rx="115" ry="28"/>
+    <ellipse rx="170" ry="42" cy="34"/>
+    <ellipse rx="225" ry="56" cy="68"/>
+    <ellipse rx="280" ry="70" cy="102"/>
+    <ellipse rx="335" ry="84" cy="136"/>
+  </g>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <text x="72" y="86" fill="#f7f9fc" font-size="30" font-weight="700">INEMA.PRO</text>
+    <text x="928" y="86" fill="#aab4c2" font-size="24" font-weight="700">IA COMO SERVIÇO</text>
+    <text x="72" y="500" fill="#4bd6ff" font-size="28" font-weight="700">Da habilidade ao cliente</text>
+    <text x="72" y="574" fill="#f7f9fc" font-size="66" font-weight="800">Aprender IA</text>
+    <text x="72" y="646" fill="#ffb84d" font-size="66" font-weight="800">para vender serviço</text>
+  </g>
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="22" font-weight="700">
+    <g transform="translate(340 285)">
+      <rect width="178" height="76" rx="10" fill="#111722" stroke="#778395"/>
+      <text x="89" y="47" text-anchor="middle" fill="#f7f9fc">Habilidade</text>
+    </g>
+    <path d="M525 323H572" stroke="#4bd6ff" stroke-width="4"/>
+    <g transform="translate(582 285)">
+      <rect width="178" height="76" rx="10" fill="#111722" stroke="#ff5d7a"/>
+      <text x="89" y="47" text-anchor="middle" fill="#f7f9fc">Problema</text>
+    </g>
+    <path d="M767 323H814" stroke="#4bd6ff" stroke-width="4"/>
+    <g transform="translate(824 285)">
+      <rect width="178" height="76" rx="10" fill="#111722" stroke="#4bd6ff"/>
+      <text x="89" y="47" text-anchor="middle" fill="#f7f9fc">Oferta</text>
+    </g>
+    <g transform="translate(220 420)">
+      <rect width="178" height="76" rx="10" fill="#111722" stroke="#5df2b6"/>
+      <text x="89" y="47" text-anchor="middle" fill="#f7f9fc">Diagnóstico</text>
+    </g>
+    <path d="M405 458H452" stroke="#4bd6ff" stroke-width="4"/>
+    <g transform="translate(462 420)">
+      <rect width="178" height="76" rx="10" fill="#111722" stroke="#ffb84d"/>
+      <text x="89" y="47" text-anchor="middle" fill="#f7f9fc">Proposta</text>
+    </g>
+    <path d="M647 458H694" stroke="#4bd6ff" stroke-width="4"/>
+    <g transform="translate(704 420)">
+      <rect width="178" height="76" rx="10" fill="#111722" stroke="#ffb84d"/>
+      <text x="89" y="47" text-anchor="middle" fill="#f7f9fc">Preço</text>
+    </g>
+    <path d="M889 458H936" stroke="#4bd6ff" stroke-width="4"/>
+    <g transform="translate(946 420)">
+      <rect width="178" height="76" rx="10" fill="#111722" stroke="#5df2b6"/>
+      <text x="89" y="47" text-anchor="middle" fill="#f7f9fc">Cliente</text>
+    </g>
+    <g transform="translate(751 560)">
+      <rect width="250" height="76" rx="10" fill="#111722" stroke="#5df2b6"/>
+      <text x="125" y="47" text-anchor="middle" fill="#f7f9fc">Recorrência</text>
+    </g>
+  </g>
+</svg>
