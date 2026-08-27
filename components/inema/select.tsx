@@ -8,8 +8,8 @@ export function INEMASelect({
   return (
     <select
       className={cn(
-        "min-h-11 w-full rounded-lg border border-inema-border bg-inema-surface px-3 text-sm text-inema-text",
-        "focus:border-inema-primary focus:outline-none focus:ring-2 focus:ring-inema-primary/20",
+        "min-h-10 w-full rounded-[8px] border border-inema-border bg-inema-bg px-3 text-[13.5px] text-inema-text",
+        "focus:border-inema-accent focus:outline-none focus:ring-2 focus:ring-inema-accent/15",
         className,
       )}
       {...props}

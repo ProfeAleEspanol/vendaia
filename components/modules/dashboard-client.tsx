@@ -45,13 +45,13 @@ export function DashboardClient() {
         actions={<SaveIndicator savedAt={savedAt} />}
       />
 
-      <section className="grid gap-4 lg:grid-cols-[1.2fr_.8fr]">
+      <section className="grid gap-3 lg:grid-cols-[1.2fr_.8fr]">
         <ProgressCard value={progress} nextStep={nextStep} />
-        <INEMACard className="grid content-between gap-6 border-inema-amber/40">
+        <INEMACard className="grid content-between gap-5 border-inema-accentBg">
           <div>
-            <p className="text-sm font-extrabold uppercase text-inema-amber">Continue de onde parou</p>
-            <h2 className="mt-3 text-2xl font-black text-inema-text">{nextStep}</h2>
-            <p className="mt-3 text-sm leading-6 text-inema-muted">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.04em] text-inema-dim">Continue de onde parou</p>
+            <h2 className="mt-2 text-lg font-semibold text-inema-text">{nextStep}</h2>
+            <p className="mt-2 text-[12.5px] leading-5 text-inema-muted">
               O app salva automaticamente os dados deste navegador. Ao conectar Supabase, estes registros passam para a conta do usuário.
             </p>
           </div>
@@ -61,7 +61,7 @@ export function DashboardClient() {
         </INEMACard>
       </section>
 
-      <section className="grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+      <section className="grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
         <MetricCard
           label="Oferta principal"
           value={state.offer.solution || "Pendente"}
@@ -115,11 +115,11 @@ export function DashboardClient() {
       <section>
         <div className="mb-4 flex items-center justify-between gap-4">
           <div>
-            <p className="text-sm font-extrabold uppercase text-inema-primary">Módulos</p>
-            <h2 className="mt-2 text-3xl font-black text-inema-text">Sistema guiado de construção</h2>
+            <p className="font-mono text-[11px] uppercase tracking-[0.08em] text-inema-dim">Módulos</p>
+            <h2 className="mt-1 text-lg font-semibold text-inema-text">Sistema guiado de construção</h2>
           </div>
         </div>
-        <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-3">
+        <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
           {workshopModules.map((module) => (
             <ModuleCard key={module.slug} module={module} />
           ))}

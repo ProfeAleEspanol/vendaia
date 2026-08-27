@@ -90,7 +90,7 @@ function ScoreInput({
     <label className="grid gap-2 text-xs font-bold uppercase text-inema-muted">
       <span className="flex justify-between">
         {label}
-        <strong className="text-inema-primary">{value}</strong>
+        <strong className="text-inema-accent">{value}</strong>
       </span>
       <input
         type="range"
@@ -98,7 +98,7 @@ function ScoreInput({
         max={5}
         value={value}
         onChange={(event) => onChange(Number(event.target.value))}
-        className="accent-inema-primary"
+        className="accent-inema-accent"
       />
     </label>
   );
@@ -198,11 +198,11 @@ export function ModuleClient({ slug }: { slug: string }) {
         }
       />
 
-      <INEMACard className="flex items-start gap-4 border-inema-primary/40">
-        <Icon className="mt-1 h-6 w-6 shrink-0 text-inema-primary" />
+      <INEMACard className="flex items-start gap-4 border-inema-accentBg">
+        <Icon className="mt-1 h-5 w-5 shrink-0 text-inema-accent" />
         <div>
           <INEMABadge tone="amber">Entrega do módulo</INEMABadge>
-          <p className="mt-3 text-xl font-black text-inema-text">{module.outcome}</p>
+          <p className="mt-3 text-[15px] font-semibold text-inema-text">{module.outcome}</p>
         </div>
       </INEMACard>
 
@@ -227,7 +227,7 @@ export function ModuleClient({ slug }: { slug: string }) {
         <div className="grid gap-4">
           <INEMACard className="border-inema-amber/40">
             <p className="text-sm font-extrabold uppercase text-inema-amber">Nicho principal sugerido</p>
-            <h2 className="mt-2 text-3xl font-black text-inema-text">{mainNiche?.sector}</h2>
+            <h2 className="mt-2 text-xl font-semibold text-inema-text">{mainNiche?.sector}</h2>
             <p className="mt-2 text-sm text-inema-muted">Score: {mainNiche ? getNicheScore(mainNiche) : 0}/100</p>
           </INEMACard>
           <div className="grid gap-4 lg:grid-cols-3">
@@ -258,12 +258,12 @@ export function ModuleClient({ slug }: { slug: string }) {
                 <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
                   <div>
                     <INEMABadge tone={score >= 80 ? "mint" : "amber"}>{classifyOpportunity(score)}</INEMABadge>
-                    <h2 className="mt-3 text-2xl font-black text-inema-text">{opportunity.problem}</h2>
+                    <h2 className="mt-3 text-lg font-semibold text-inema-text">{opportunity.problem}</h2>
                     <p className="mt-2 text-sm leading-6 text-inema-muted">{opportunity.currentProcess}</p>
                   </div>
                   <div className="min-w-40">
                     <p className="text-sm font-bold text-inema-muted">Score</p>
-                    <p className="text-4xl font-black text-inema-primary">{score}</p>
+                    <p className="text-[28px] font-semibold text-inema-accent">{score}</p>
                   </div>
                 </div>
                 <div className="mt-5 grid gap-4 md:grid-cols-3">
@@ -284,7 +284,7 @@ export function ModuleClient({ slug }: { slug: string }) {
               <div className="flex items-start justify-between gap-4">
                 <div>
                   <INEMABadge tone="cyan">{service.category}</INEMABadge>
-                  <h2 className="mt-3 text-2xl font-black text-inema-text">{service.name}</h2>
+                  <h2 className="mt-3 text-lg font-semibold text-inema-text">{service.name}</h2>
                 </div>
                 <INEMAButton variant="secondary" onClick={() => updateService(index, { archived: !service.archived })}>
                   {service.archived ? "Restaurar" : "Arquivar"}
@@ -346,8 +346,8 @@ export function ModuleClient({ slug }: { slug: string }) {
           </FormSection>
           <INEMACard className="h-fit border-inema-amber/40">
             <INEMABadge tone="amber">Oferta gerada</INEMABadge>
-            <p className="mt-4 text-2xl font-black leading-tight text-inema-text">{generatedOffer}</p>
-            <p className="mt-5 text-sm font-extrabold uppercase text-inema-primary">Pitch de 30 segundos</p>
+            <p className="mt-4 text-lg font-semibold leading-snug text-inema-text">{generatedOffer}</p>
+            <p className="mt-5 text-[11px] font-semibold uppercase tracking-[0.04em] text-inema-dim">Pitch de 30 segundos</p>
             <p className="mt-2 text-sm leading-6 text-inema-muted">{pitch}</p>
           </INEMACard>
         </div>
@@ -427,12 +427,12 @@ export function ModuleClient({ slug }: { slug: string }) {
           </FormSection>
           <INEMACard className="h-fit">
             <INEMABadge tone="cyan">{state.proposal.status}</INEMABadge>
-            <h2 className="mt-4 text-2xl font-black text-inema-text">{state.proposal.title}</h2>
+            <h2 className="mt-4 text-lg font-semibold text-inema-text">{state.proposal.title}</h2>
             <p className="mt-4 text-sm leading-6 text-inema-muted">{state.proposal.currentSituation}</p>
             <p className="mt-4 text-sm leading-6 text-inema-muted">{state.proposal.solution}</p>
-            <div className="mt-6 rounded-lg border border-inema-border bg-inema-surface p-4">
+            <div className="mt-6 rounded-inema border border-inema-border bg-inema-bg p-4">
               <p className="text-sm text-inema-muted">Investimento</p>
-              <p className="text-3xl font-black text-inema-amber">R$ {state.proposal.investment.toLocaleString("pt-BR")}</p>
+              <p className="text-[24px] font-semibold text-inema-amber">R$ {state.proposal.investment.toLocaleString("pt-BR")}</p>
               <p className="mt-2 text-sm text-inema-muted">Mensalidade: R$ {state.proposal.monthlyPlan.toLocaleString("pt-BR")}</p>
             </div>
           </INEMACard>
@@ -444,8 +444,8 @@ export function ModuleClient({ slug }: { slug: string }) {
           <INEMACard>
             <div className="flex items-center justify-between gap-4">
               <div>
-                <p className="text-sm font-extrabold uppercase text-inema-primary">Primeiros 20 clientes</p>
-                <h2 className="mt-2 text-3xl font-black text-inema-text">{state.prospects.length} / 20</h2>
+                <p className="text-[11px] font-semibold uppercase tracking-[0.04em] text-inema-dim">Primeiros 20 clientes</p>
+                <h2 className="mt-2 text-xl font-semibold text-inema-text">{state.prospects.length} / 20</h2>
               </div>
               <INEMAProgress value={(state.prospects.length / 20) * 100} className="w-48" />
             </div>
@@ -487,7 +487,7 @@ export function ModuleClient({ slug }: { slug: string }) {
                     ),
                   }))
                 }
-                className="h-5 w-5 accent-inema-primary"
+                className="h-5 w-5 accent-inema-accent"
               />
               <span className={task.done ? "text-inema-muted line-through" : "font-bold text-inema-text"}>{task.label}</span>
             </label>
@@ -499,19 +499,19 @@ export function ModuleClient({ slug }: { slug: string }) {
         <div className="grid gap-4">
           <INEMACard className="border-inema-mint/40">
             <p className="text-sm font-extrabold uppercase text-inema-mint">Receita recorrente mensal</p>
-            <h2 className="mt-2 text-4xl font-black text-inema-text">R$ {getMrr(state.recurrence).toLocaleString("pt-BR")}</h2>
+            <h2 className="mt-2 text-[28px] font-semibold text-inema-text">R$ {getMrr(state.recurrence).toLocaleString("pt-BR")}</h2>
           </INEMACard>
           {state.recurrence.map((contract) => (
             <INEMACard key={contract.id}>
               <div className="flex flex-col gap-4 lg:flex-row lg:items-start lg:justify-between">
                 <div>
-                  <h2 className="text-2xl font-black text-inema-text">{contract.client}</h2>
+                  <h2 className="text-lg font-semibold text-inema-text">{contract.client}</h2>
                   <p className="mt-2 text-sm text-inema-muted">{contract.project}</p>
                   <p className="mt-3 text-sm text-inema-muted">{contract.improvements}</p>
                 </div>
-                <div className="rounded-lg border border-inema-border bg-inema-surface p-4">
+                <div className="rounded-inema border border-inema-border bg-inema-bg p-4">
                   <p className="text-sm text-inema-muted">Mensalidade</p>
-                  <p className="text-3xl font-black text-inema-mint">R$ {contract.monthlyFee.toLocaleString("pt-BR")}</p>
+                  <p className="text-[24px] font-semibold text-inema-mint">R$ {contract.monthlyFee.toLocaleString("pt-BR")}</p>
                   <p className="mt-1 text-xs text-inema-muted">Vencimento dia {contract.dueDay}</p>
                 </div>
               </div>
@@ -525,9 +525,9 @@ export function ModuleClient({ slug }: { slug: string }) {
 
 function Scenario({ label, value, highlight }: { label: string; value: number; highlight?: boolean }) {
   return (
-    <div className={highlight ? "rounded-lg border border-inema-amber bg-inema-surface p-4" : "rounded-lg border border-inema-border bg-inema-surface p-4"}>
+    <div className={highlight ? "rounded-inema border border-inema-amber bg-inema-bg p-4" : "rounded-inema border border-inema-border bg-inema-bg p-4"}>
       <p className="text-sm font-bold text-inema-muted">{label}</p>
-      <p className={highlight ? "mt-1 text-3xl font-black text-inema-amber" : "mt-1 text-2xl font-black text-inema-text"}>
+      <p className={highlight ? "mt-1 text-[24px] font-semibold text-inema-amber" : "mt-1 text-lg font-semibold text-inema-text"}>
         R$ {value.toLocaleString("pt-BR")}
       </p>
     </div>

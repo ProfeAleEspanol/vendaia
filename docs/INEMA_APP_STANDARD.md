@@ -71,6 +71,16 @@ app/globals.css
 
 Evitar cores espalhadas diretamente pelos componentes.
 
+O padrão visual deve seguir o INEMA.PRO oficial:
+
+- topbar compacta escura;
+- sidebar escura com grupos de navegação;
+- fundo principal `content`;
+- cards `panel` com borda discreta e raio de 10px;
+- acento azul/ciano do INEMA para estados ativos, links e ações principais;
+- tipografia semibold e compacta, evitando tratamento de landing page;
+- sombras mínimas ou inexistentes em telas de produto.
+
 ## Conteúdo
 
 Conteúdo do workshop fica em:
@@ -124,4 +134,3 @@ O app não deve acoplar a experiência a um único fornecedor.
 3. Criar exportação PDF de propostas.
 4. Conectar provedores de IA.
 5. Criar permissões para membros INEMA.PRO, INEMA.VIP, administradores e instrutores.
-

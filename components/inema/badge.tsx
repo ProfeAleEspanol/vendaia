@@ -9,7 +9,7 @@ export function INEMABadge({
   ...props
 }: React.HTMLAttributes<HTMLSpanElement> & { tone?: BadgeTone }) {
   const tones: Record<BadgeTone, string> = {
-    cyan: "border-inema-primary/50 text-inema-primary",
+    cyan: "border-inema-accentBg text-inema-accentStrong",
     mint: "border-inema-mint/50 text-inema-mint",
     amber: "border-inema-amber/50 text-inema-amber",
     purple: "border-inema-purple/50 text-inema-purple",
@@ -20,7 +20,7 @@ export function INEMABadge({
   return (
     <span
       className={cn(
-        "inline-flex min-h-7 items-center rounded-md border bg-inema-panel-high px-2.5 text-xs font-bold",
+        "inline-flex min-h-6 items-center rounded-[5px] border bg-inema-sidebar px-2 font-mono text-[10.5px] font-semibold uppercase tracking-[0.03em]",
         tones[tone],
         className,
       )}

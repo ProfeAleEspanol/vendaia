@@ -4,11 +4,21 @@
 
 :root {
   color-scheme: dark;
-  --inema-bg: #111111;
-  --inema-surface: #1a1a1a;
-  --inema-panel: #242424;
-  --inema-border: #333333;
-  --inema-primary: #facc15;
+  --inema-bg: oklch(0.18 0.012 255);
+  --inema-content: oklch(0.195 0.012 255);
+  --inema-panel: oklch(0.215 0.012 255);
+  --inema-sidebar: oklch(0.163 0.012 255);
+  --inema-topbar: oklch(0.172 0.012 255);
+  --inema-border: oklch(0.30 0.012 255);
+  --inema-border-strong: oklch(0.40 0.014 255);
+  --inema-ink: oklch(0.95 0.008 250);
+  --inema-muted: oklch(0.70 0.014 250);
+  --inema-faint: oklch(0.55 0.014 250);
+  --inema-accent: oklch(0.74 0.11 222);
+  --inema-accent-strong: oklch(0.80 0.12 222);
+  --inema-accent-ink: oklch(0.20 0.03 240);
+  --inema-accent-bg: oklch(0.27 0.045 232);
+  --inema-accent-hover: oklch(0.25 0.02 255);
 }
 
 * {
@@ -22,16 +32,17 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  background:
-    linear-gradient(180deg, rgba(36, 36, 36, 0.78), rgba(17, 17, 17, 0) 18rem),
-    var(--inema-bg);
-  color: #dddddd;
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--inema-bg);
+  color: var(--inema-ink);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, system-ui, sans-serif;
+  font-size: 14.5px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
 }
 
 ::selection {
-  background: var(--inema-primary);
-  color: #111111;
+  background: var(--inema-accent-bg);
+  color: var(--inema-ink);
 }
 
 a {
@@ -47,8 +58,5 @@ select {
 }
 
 .inema-grid {
-  background-image:
-    linear-gradient(rgba(250, 204, 21, 0.035) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.032) 1px, transparent 1px);
-  background-size: 64px 64px;
+  background: var(--inema-content);
 }

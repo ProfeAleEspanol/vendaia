@@ -8,8 +8,8 @@ export type INEMAButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
 };
 
 const variants: Record<ButtonVariant, string> = {
-  primary: "border-inema-primary bg-inema-primary text-inema-bg hover:bg-[#fde047]",
-  secondary: "border-inema-border bg-inema-panel text-inema-soft hover:border-inema-primary hover:text-inema-text",
+  primary: "border-transparent bg-inema-accent text-inema-accentInk hover:bg-inema-accentStrong",
+  secondary: "border-inema-border bg-transparent text-inema-muted hover:border-inema-borderStrong hover:text-inema-text",
   ghost: "border-transparent bg-transparent text-inema-muted hover:text-inema-text",
   danger: "border-inema-rose bg-inema-rose text-white hover:bg-[#ff7890]",
 };
@@ -24,8 +24,8 @@ export function INEMAButton({
     <button
       type={type}
       className={cn(
-        "inline-flex min-h-10 items-center justify-center rounded-lg border px-4 text-sm font-bold transition",
-        "focus:outline-none focus:ring-2 focus:ring-inema-primary/70 focus:ring-offset-2 focus:ring-offset-inema-bg",
+        "inline-flex min-h-9 items-center justify-center rounded-[8px] border px-3.5 text-[12.5px] font-semibold transition",
+        "focus:outline-none focus:ring-2 focus:ring-inema-accent/70 focus:ring-offset-2 focus:ring-offset-inema-bg",
         variants[variant],
         className,
       )}

@@ -13,9 +13,9 @@ export function INEMAStepper({
         <li
           key={step}
           className={cn(
-            "rounded-lg border px-3 py-2 text-sm font-bold",
+            "rounded-[7px] border px-3 py-2 text-[13px] font-medium",
             index <= current
-              ? "border-inema-primary text-inema-primary"
+              ? "border-inema-accent text-inema-accent"
               : "border-inema-border text-inema-muted",
           )}
         >

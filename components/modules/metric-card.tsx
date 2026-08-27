@@ -13,15 +13,15 @@ export function MetricCard({
   icon: LucideIcon;
 }) {
   return (
-    <INEMACard className="min-h-36">
+    <INEMACard className="min-h-32">
       <div className="flex items-start justify-between gap-4">
         <div>
-          <p className="text-sm font-bold text-inema-muted">{label}</p>
-          <p className="mt-4 text-3xl font-black text-inema-text">{value}</p>
+          <p className="text-[12.5px] font-medium text-inema-muted">{label}</p>
+          <p className="mt-3 text-2xl font-semibold tracking-[-0.01em] text-inema-text">{value}</p>
         </div>
-        <Icon className="h-6 w-6 text-inema-primary" />
+        <Icon className="h-5 w-5 text-inema-accent" />
       </div>
-      <p className="mt-4 text-sm leading-6 text-inema-muted">{helper}</p>
+      <p className="mt-3 text-[12.5px] leading-5 text-inema-muted">{helper}</p>
     </INEMACard>
   );
 }

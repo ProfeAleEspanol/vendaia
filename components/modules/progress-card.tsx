@@ -9,19 +9,19 @@ export function ProgressCard({
   nextStep: string;
 }) {
   return (
-    <INEMACard className="border-inema-primary/40">
+    <INEMACard className="border-inema-border">
       <div className="flex items-center justify-between gap-4">
         <div>
-          <p className="text-sm font-bold uppercase text-inema-primary">Progresso geral</p>
-          <h2 className="mt-2 text-4xl font-black text-inema-text">{value}%</h2>
+          <p className="text-[11px] font-semibold uppercase tracking-[0.04em] text-inema-dim">Progresso geral</p>
+          <h2 className="mt-2 text-[26px] font-semibold text-inema-text">{value}%</h2>
         </div>
-        <span className="rounded-lg border border-inema-border bg-inema-surface px-3 py-2 text-xs font-bold text-inema-muted">
+        <span className="rounded-[5px] border border-inema-border px-2 py-1 font-mono text-[11px] text-inema-muted">
           MVP local
         </span>
       </div>
       <INEMAProgress value={value} className="mt-5" />
-      <p className="mt-5 text-sm font-bold text-inema-soft">Seu próximo passo</p>
-      <p className="mt-1 text-sm leading-6 text-inema-muted">{nextStep}</p>
+      <p className="mt-5 text-[12.5px] font-semibold text-inema-text">Seu próximo passo</p>
+      <p className="mt-1 text-[12.5px] leading-5 text-inema-muted">{nextStep}</p>
     </INEMACard>
   );
 }

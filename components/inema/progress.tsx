@@ -11,7 +11,7 @@ export function INEMAProgress({
 
   return (
     <div
-      className={cn("h-2 overflow-hidden rounded-full bg-inema-surface", className)}
+      className={cn("h-2 overflow-hidden rounded-full bg-inema-accentBg", className)}
       aria-label={`Progresso ${safeValue}%`}
       role="progressbar"
       aria-valuemin={0}
@@ -19,7 +19,7 @@ export function INEMAProgress({
       aria-valuenow={safeValue}
     >
       <div
-        className="h-full rounded-full bg-gradient-to-r from-inema-primary to-inema-amber transition-all"
+        className="h-full rounded-full bg-inema-accent transition-all"
         style={{ width: `${safeValue}%` }}
       />
     </div>
